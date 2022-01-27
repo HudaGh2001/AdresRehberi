@@ -1,0 +1,23 @@
+CREATE TABLE `adresler` (
+  `kno` int(11) NOT NULL,
+  `k_adi` varchar(100) COLLATE utf8_turkish_ci NOT NULL,
+  `k_parola` varchar(200) COLLATE utf8_turkish_ci NOT NULL,
+  `k_mail` varchar(100) COLLATE utf8_turkish_ci NOT NULL,
+  `adi` varchar(100) COLLATE utf8_turkish_ci NOT NULL,
+  `soyadi` varchar(100) COLLATE utf8_turkish_ci NOT NULL,
+  `adres` varchar(200) COLLATE utf8_turkish_ci NOT NULL,
+  `telefon` varchar(20) COLLATE utf8_turkish_ci NOT NULL,
+  `dogum_tarihi` varchar(20) COLLATE utf8_turkish_ci NOT NULL,
+  `kayit_tarihi` varchar(20) COLLATE utf8_turkish_ci NOT NULL,
+  `fotograf` varchar(100) COLLATE utf8_turkish_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_turkish_ci;
+
+--
+-- Dökümü yapılmış tablolar için indeksler
+--
+
+--
+-- Tablo için indeksler `adresler`
+--
+ALTER TABLE `adresler`
+  ADD PRIMARY KEY (`kno`);
